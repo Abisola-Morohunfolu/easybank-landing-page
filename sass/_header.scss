@@ -1,0 +1,16 @@
+.header {
+	display: flex;
+	overflow: hidden;
+
+	&__image-box {
+		background-image: url(../images/bg-intro-desktop.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		@media only screen and (max-width: 37.5em) {
+			background-image: url(../images/bg-intro-mobile.svg);
+		}
+
+		transform: translate(10%, -10%);
+	}
+}
