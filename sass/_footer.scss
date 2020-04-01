@@ -1,0 +1,57 @@
+.footer {
+	padding: 4rem 6rem;
+	background-color: $color-primary-blue;
+	display: flex;
+	// align-items: center;
+	justify-content: space-between;
+
+	&-image-box {
+		display: flex;
+		flex-direction: column;
+		align-content: space-between;
+	}
+
+	&-brand {
+		margin-bottom: auto;
+	}
+
+	.icon-list {
+		display: flex;
+		list-style: none;
+	}
+
+	.icon-item {
+		padding: 0.5rem;
+	}
+
+	&-nav__list {
+		color: $color-white;
+		list-style: none;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: 20rem;
+		align-content: flex-start;
+	}
+
+	&-nav__item {
+		font-size: 1.6rem;
+		padding: 1rem;
+		text-align: left;
+	}
+
+	&-copy {
+		display: flex;
+		flex-direction: column;
+
+		button {
+			margin-bottom: auto;
+			align-self: flex-end;
+		}
+
+		.copyright {
+			color: $color-white;
+			font-size: 1.4rem;
+		}
+	}
+}

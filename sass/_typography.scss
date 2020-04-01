@@ -15,3 +15,46 @@
 		background-image: linear-gradient(to right, $color-primary-green, $color-primary-cyan);
 	}
 }
+
+.heading-1 {
+	font-size: 4.8rem;
+	font-weight: 400;
+	color: $color-primary-blue;
+}
+
+.heading-2 {
+	font-size: 3.6rem;
+	font-weight: 400;
+	color: $color-primary-blue;
+}
+
+.heading-3 {
+	font-size: 2rem;
+	font-weight: 400;
+	color: $color-primary-blue;
+}
+
+.heading-4 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: $color-primary-blue;
+}
+
+.paragraph {
+	font-size: 1.6rem;
+	color: $color-gray-blue;
+	line-height: 1.4;
+}
+
+// UTILITIES
+.mb-2 {
+	margin-bottom: 2rem;
+}
+
+.mb-4 {
+	margin-bottom: 4rem;
+}
+
+.mb-6 {
+	margin-bottom: 6rem;
+}

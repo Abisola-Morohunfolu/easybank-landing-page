@@ -1,0 +1,24 @@
+.section-features {
+	background-color: $color-gray-blue-lg;
+	padding: 8rem 6rem;
+	width: 100%;
+}
+
+.feature {
+	&-heading {
+		width: 55%;
+	}
+
+	&__box-container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__box {
+		margin-right: 4.5rem;
+
+		&-image {
+			padding-bottom: 2rem;
+		}
+	}
+}

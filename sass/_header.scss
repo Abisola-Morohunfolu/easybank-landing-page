@@ -1,16 +1,27 @@
 .header {
 	display: flex;
 	overflow: hidden;
+	height: 80vh;
+
+	&__text-box {
+		align-self: center;
+		padding: 2rem 6rem;
+	}
 
 	&__image-box {
 		background-image: url(../images/bg-intro-desktop.svg);
-		background-size: cover;
+		background-size: 150%;
 		background-repeat: no-repeat;
+		background-position-x: left 10%;
+		background-position-y: top 50%;
+		height: 100%;
 
 		@media only screen and (max-width: 37.5em) {
 			background-image: url(../images/bg-intro-mobile.svg);
 		}
 
-		transform: translate(10%, -10%);
+		& img {
+			transform: translate(10%, -15%);
+		}
 	}
 }
