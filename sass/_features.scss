@@ -7,15 +7,30 @@
 .feature {
 	&-heading {
 		width: 55%;
+
+		@media only screen and (max-width: 800px) {
+			width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__box-container {
 		display: flex;
 		justify-content: space-between;
+
+		@media only screen and (max-width: 800px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__box {
 		margin-right: 4.5rem;
+
+		@media only screen and (max-width: 800px) {
+			margin-right: 0;
+			margin-bottom: 4.5rem;
+			text-align: center;
+		}
 
 		&-image {
 			padding-bottom: 2rem;

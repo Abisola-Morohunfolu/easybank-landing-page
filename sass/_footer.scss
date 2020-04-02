@@ -5,6 +5,13 @@
 	// align-items: center;
 	justify-content: space-between;
 
+	@media only screen and (max-width: 37.5em) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+	}
+
 	&-image-box {
 		display: flex;
 		flex-direction: column;
@@ -13,6 +20,10 @@
 
 	&-brand {
 		margin-bottom: auto;
+
+		@media only screen and (max-width: 37.5em) {
+			margin-bottom: 1rem;
+		}
 	}
 
 	.icon-list {
@@ -32,6 +43,14 @@
 		flex-wrap: wrap;
 		width: 20rem;
 		align-content: flex-start;
+
+		@media only screen and (max-width: 37.5em) {
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			margin-top: 2rem;
+		}
 	}
 
 	&-nav__item {
@@ -47,11 +66,29 @@
 		button {
 			margin-bottom: auto;
 			align-self: flex-end;
+
+			@media only screen and (max-width: 37.5em) {
+				margin-bottom: 2rem;
+				align-self: center;
+			}
 		}
 
 		.copyright {
 			color: $color-white;
 			font-size: 1.4rem;
 		}
+	}
+}
+
+.attribution {
+	background-color: $color-primary-blue;
+	color: $color-primary-cyan;
+	padding: 2rem;
+	font-size: 1.2rem;
+
+	a {
+		font-family: inherit;
+		text-decoration: none;
+		color: $color-white;
 	}
 }

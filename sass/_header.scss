@@ -3,9 +3,23 @@
 	overflow: hidden;
 	height: 80vh;
 
+	@media only screen and (max-width: 1024px) {
+		height: 60vh;
+	}
+
+	@media only screen and (max-width: 37.5em) {
+		flex-direction: column-reverse;
+	}
+
 	&__text-box {
 		align-self: center;
 		padding: 2rem 6rem;
+
+		@media only screen and (max-width: 37.5em) {
+			text-align: center;
+			height: 70vh;
+			margin-top: 2rem;
+		}
 	}
 
 	&__image-box {
@@ -16,12 +30,27 @@
 		background-position-y: top 50%;
 		height: 100%;
 
+		@media only screen and (max-width: 1024px) {
+			width: 50%;
+		}
+
 		@media only screen and (max-width: 37.5em) {
 			background-image: url(../images/bg-intro-mobile.svg);
+			height: 50%;
+			width: 100%;
+			background-size: 100%;
+			margin-bottom: 4rem;
 		}
 
 		& img {
 			transform: translate(10%, -15%);
+
+			@media only screen and (max-width: 37.5em) {
+				transform: translate(0, -40%);
+				// height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }

@@ -8,22 +8,42 @@
 		display: flex;
 		flex-wrap: wrap;
 
-		&:hover .article__box:not(:hover) {
-			transform: scale(0.93);
-			filter: blur(0.5px);
-		}
+		// &:hover .article__box:not(:hover) {
+		// 	transform: scale(0.93);
+		// 	filter: blur(0.5px);
+
+		// 	@media only screen and (max-width: 800px) {
+		// 		transform: scale(1);
+		// 		filter: blur(0px);
+		// 	}
+		// }
 	}
 
 	&__box {
 		width: calc(25% - 3rem);
+		min-width: min-content;
 		background-color: $color-white;
-		height: 65vh;
+		min-height: 45vh;
 		border-radius: 3px;
 		cursor: pointer;
 		transition: all 0.3s ease;
 
+		@media only screen and (max-width: 800px) {
+			width: calc(50% - 3rem);
+			margin-bottom: 3rem;
+		}
+
+		@media only screen and (max-width: 37.5em) {
+			width: 100%;
+			min-height: min-content;
+		}
+
 		&:not(:last-child) {
 			margin-right: 3rem;
+
+			@media only screen and (max-width: 37.5em) {
+				margin-right: 0;
+			}
 		}
 
 		&-image {
@@ -38,7 +58,7 @@
 
 		&:hover {
 			box-shadow: 0 7px 2rem rgba($color-primary-blue, 0.3);
-			transform: scale(1.05) translateY(-3px);
+			// transform: scale(1.05) translateY(-3px);
 		}
 	}
 
